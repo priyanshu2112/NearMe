@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/iv_sex"
+                app:srcCompat="@drawable/ic_female_img"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+                android:layout_height="22dp"
+                android:elevation="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/tv_name"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_dist"
+                android:text="Distance"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal|italic"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="lat"
+                android:id="@+id/tv_lat"
+                android:textColor="@color/colorCord"
+                android:textAllCaps="true"
+                android:textAlignment="viewEnd"
+                android:paddingRight="5dp" />
+<View
+    android:layout_width="2dp"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"></View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="lng"
+                android:id="@+id/tv_lng"
+                android:textColor="@color/colorCord"
+                android:textAllCaps="true"
+                android:paddingLeft="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>
